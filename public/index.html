@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!------<title> Website Layout | CodingLab</title>------>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        ::selection {
+            color: #000;
+            background: #fff;
+        }
+
+        .img {
+            background: url('https://ik.imagekit.io/l8wenszrc/1-23112022.jpg?updatedAt=1681038339843')no-repeat;
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .img::before {
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.779);
+        }
+
+        .center {
+            position: absolute;
+            top: 52%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .center .title {
+            color: #cacaca;
+        }
+
+        .center .sub_title {
+            color: #d1cfcfeb;
+            font-size: 52px;
+            font-weight: 600;
+        }
+
+        .center .btns {
+            margin-top: 20px;
+        }
+
+        .center .btns button {
+            height: 55px;
+            width: 170px;
+            border-radius: 5px;
+            border: none;
+            margin: 0 10px;
+            border: 2px solid white;
+            font-size: 20px;
+            font-weight: 500;
+            padding: 0 10px;
+            cursor: pointer;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .center .btns button:first-child {
+            color: #fff;
+            background: none;
+        }
+
+        .btns button:first-child:hover {
+            background: white;
+            color: black;
+        }
+
+        .center .btns button:last-child {
+            background: white;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="img"></div>
+
+    <div class="center">
+
+
+        <div class="title">
+
+            <h3>DGI Students Community</h3>
+            <p><i class="fa-solid fa-arrow-right-from-bracket" style="color: green;"></i> This website has been created
+                keeping in mind the problems of the students of Dronacharya College.</p>
+            <p><i class="fa-solid fa-arrow-right-from-bracket" style="color: green;"></i> Every day a new poll will be
+                available on this website, in which you will have to vote. This vote will be very important for all of
+                us.</p>
+            <p><i class="fa-solid fa-arrow-right-from-bracket" style="color: green;"></i>To submit your poll, it is
+                necessary to fill the form given below.</p>
+            <p><i class="fa-solid fa-arrow-right-from-bracket" style="color: green;"></i>Your all personal details will
+                be hide.
+            </p>
+        </div>
+        <div class="btns">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdd8SDBYVU01JwBgNUDZ8eQL5gZa9BTBioWqjbctRq9d4TM5A/viewform?usp=pp_url"><button>Fill Form</button></a>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

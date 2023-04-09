@@ -1,0 +1,29 @@
+{
+  "name": "dgi-studnt-community",
+  "version": "1.0.0",
+  "description": "node.js + firebase + html + css + express FULL STACK",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js --ignore *.json",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "connect-mongo": "^5.0.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.1",
+    "express-session": "^1.17.3",
+    "firebase-admin": "^10.1.0",
+    "method-override": "^3.0.0",
+    "mongoose": "^7.0.3",
+    "passport": "^0.6.0",
+    "passport-google-oauth20": "^2.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
