@@ -187,6 +187,18 @@
         const currUrl = window.location.href
         const urlDiv = document.getElementById('url')
         urlDiv.href = `https://api.whatsapp.com/send?text=`+currUrl
+        
+        var idNum = parseInt(id);
+
+        function nextLink(){
+            
+            var x = idNum + 1;
+            var nxt = document.getElementById('nxt');
+            nxt.href = `localhost:8383/`+ x;
+        }
+
+        
+        
         const question = document.querySelector('main > h2')
         const fProfile = document.getElementById('fProfile')
         const sProfile = document.getElementById('sProfile')
