@@ -174,7 +174,10 @@
         </div>
         <ul id="options"></ul>
     </main>
-    <a id="nxt" href="" onclick="nextLink()" target="_blank"><button type="button"  class="btn btn-light"><i class="fa-solid fa-circle-arrow-right" style="font-size: 15px;"></i> Next Poll</button></i></a>
+    <div class="nxt-pre-btn m-2" style="display: flex;justify-content: space-around; align-items: center; gap: 20px;">
+        <a id="pre" href="" onclick="preLink()" target="_blank"><button type="button"  class="btn btn-light"><i class="fa-solid fa-circle-arrow-left" style="font-size: 15px;"></i> Next Poll</button></i></a>
+        <a id="nxt" href="" onclick="nextLink()" target="_blank"><button type="button"  class="btn btn-light"><i class="fa-solid fa-circle-arrow-right" style="font-size: 15px;"></i> Next Poll</button></i></a>
+    </div>
 
     <div style="display: flex;justify-content: space-around; align-items: center; gap: 20px;">
         <a id="url" class="whts" href="" data-action="share/whatsapp/share">
@@ -191,6 +194,13 @@
         urlDiv.href = `https://api.whatsapp.com/send?text=`+currUrl
         
         var idNum = parseInt(id);
+        
+        function preLink(){
+            
+            var x = idNum - 1;
+            var nxt = document.getElementById('pre');
+            pre.href = `https://dgi.onrender.com/`+ x;
+        }
 
         function nextLink(){
             
